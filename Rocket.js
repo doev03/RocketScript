@@ -165,6 +165,7 @@ $(document).ready(function () {
         elem.style.top = elem.offsetTop + "px";
         elem.style.left = elem.offsetLeft + "px";
         elem.style.position = "absolute";
+        elem.style.zIndex = "1000";
         let currElementTicks = new Date().getTime();
         let prevElementTicks;
 
