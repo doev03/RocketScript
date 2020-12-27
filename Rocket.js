@@ -174,7 +174,7 @@ $(document).ready(function () {
 
             elem.style.top = parseFloat(elem.style.top)- 1 / 3 * (currElementTicks - prevElementTicks) * Math.cos(elementAngle * (Math.PI / 180)) + "px";
             elem.style.left = parseFloat(elem.style.left) + 1 / 3 * (currElementTicks - prevElementTicks) * Math.sin(elementAngle * (Math.PI / 180)) + "px";
-
+            console.log(elem.offsetTop + " " + elem.offsetLeft + "\n\n");
             if (elem.offsetTop < 0 || elem.offsetTop > document.body.offsetHeight || elem.offsetLeft < 0 || elem.offsetLeft > document.body.offsetWidth) {
                 elem.remove();
                 clearTimeout(elementTimer);
