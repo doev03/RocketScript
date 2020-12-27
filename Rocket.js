@@ -52,7 +52,7 @@ $(document).ready(function () {
                 speed -= 0.01;
             }
         }
-        if (move && dist >= rocket.clientHeight / 2 + 10) {
+        if (move && dist >= rocket.clientHeight / 2 + 25) {
             left = parseFloat(cs.left);
             top = parseFloat(cs.top);
             rocket.style.top = top - speed * (currFrameTicks - prevFrameTicks) * Math.cos(rocketAngle * (Math.PI / 180)) + "px";
