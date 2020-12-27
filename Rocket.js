@@ -226,15 +226,15 @@ $(document).ready(function () {
         addPlugins();
         document.querySelector('body').removeAttribute('style');
         
-        rocket = document.createElement('img');
-        rocket.id = "rocket";
-        rocket.src = rocketPics[11];
-        rocket.width = "55.302";
-        rocket.height = "100";
-        rocket.style.left = 30 + "px";
-        rocket.style.top = 30 + "px";
-        rocket.style.position = "absolute";
-        document.body.append(rocket);
+        // rocket = document.createElement('img');
+        // rocket.id = "rocket";
+        // rocket.src = rocketPics[11];
+        // rocket.width = "55.302";
+        // rocket.height = "100";
+        // rocket.style.left = 30 + "px";
+        // rocket.style.top = 30 + "px";
+        // rocket.style.position = "absolute";
+        // document.body.append(rocket);
 
         createAsteroids();
 
