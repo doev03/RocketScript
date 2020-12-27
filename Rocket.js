@@ -234,7 +234,7 @@ $(document).ready(function () {
         rocket.style.left = 30 + "px";
         rocket.style.top = 30 + "px";
         rocket.style.position = "absolute";
-        rocket.style.zIndex = -1;
+        rocket.style.zIndex = 10000;
         document.body.append(rocket);
 
         createAsteroids();
