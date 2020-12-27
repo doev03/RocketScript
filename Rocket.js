@@ -129,6 +129,7 @@ $(document).ready(function () {
         dot.style.left = - dot.width / 2 + rocket.offsetLeft + rocket.width / 2 + (rocket.height / 2 + 5) * Math.sin(rocketAngle * (Math.PI / 180)) + "px";
         let dotAngle = rocketAngle;
         dot.style.position = "absolute";
+        dot.style.zIndex = "1000";
         document.body.append(dot);
 
         let currDotTicks = new Date().getTime();
@@ -164,7 +165,6 @@ $(document).ready(function () {
         elem.style.top = elem.offsetTop + "px";
         elem.style.left = elem.offsetLeft + "px";
         elem.style.position = "absolute";
-        elem.style.zIndex = 1000;
         let currElementTicks = new Date().getTime();
         let prevElementTicks;
 
@@ -234,7 +234,7 @@ $(document).ready(function () {
         rocket.style.left = 30 + "px";
         rocket.style.top = 30 + "px";
         rocket.style.position = "absolute";
-        rocket.style.zIndex = 10000;
+        rocket.style.zIndex = "1000";
         document.body.append(rocket);
 
         createAsteroids();
