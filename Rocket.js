@@ -59,7 +59,7 @@ $(document).ready(function () {
             rocket.style.left = left + speed * (currFrameTicks - prevFrameTicks) * Math.sin(rocketAngle * (Math.PI / 180)) + "px";
             animate();
         }
-        else if (move && dist <= rocket.clientHeight / 2 + 5) {
+        else if (move && dist <= rocket.clientHeight / 2 + 20) {
             left = parseFloat(cs.left);
             top = parseFloat(cs.top);
             rocket.style.top = top + defaultSpeed / 5 * (currFrameTicks - prevFrameTicks) * Math.cos(rocketAngle * (Math.PI / 180)) + "px";
